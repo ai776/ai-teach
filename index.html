@@ -1,367 +1,197 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-  <meta property='og:type' content='website'>
-  <meta property='og:title' content='Webデザイナーkaku ポートフォリオ'>
-  <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='Webデザイナー kakuのポートフォリオサイトです！'>
-  <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="Webデザイナー kakuのポートフォリオサイトです！" />
-  <title>Webデザイナー kaku ポートフォリオ</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
-  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
-  <link rel=”canonical” href=”URLが入る” />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIコンサルタント養成講座《総合オンラインプログラム》</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        .accent-blue {
+            --tw-bg-opacity: 1;
+            background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+        .accent-blue-outline {
+            --tw-border-opacity: 1;
+            border-color: rgb(37 99 235 / var(--tw-border-opacity));
+            --tw-text-opacity: 1;
+            color: rgb(37 99 235 / var(--tw-text-opacity));
+        }
+        .section-title {
+            font-size: 1.875rem; /* 30px */
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2.5rem; /* 40px */
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #2563EB;
+            border-radius: 2px;
+        }
+    </style>
 </head>
+<body class="bg-white text-gray-800">
 
-<body>
-  <div id="wrapper">
-    <nav id="gnav" class="fixed">
-      <ul>
-        <li><a href="#works">WORKS</a></li>
-        <!-- <li><a href="#feature">FEATURE</a></li> -->
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skill">SKILL</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <header id="header">
-      <div class="inner">
-        <h1 class="logo">
-          <div class="logo-title">kaku</div>
-          <div class="logo-desc">PORTFOLIO</div>
-        </h1>
-      </div>
-    </header>
-    <main id="contents">
-      <section class="section" id="works">
-        <div class="inner">
-          <div class="section-title-area">
-            <h2 class="section-title">WORKS</h2>
-            <div class="section-intro">
-              <div class="section-text">
-                Web（デザインとコーディング）制作の記録です。<br class="pc">デザイン練習用の架空サイト（ファーストビューのみ）も含んでおります。
-              </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+
+        <!-- ヘッダーセクション -->
+        <header class="text-center mb-12 md:mb-16">
+            <p class="text-blue-600 font-semibold mb-2">特別セミナー参加者限定</p>
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">AIコンサルタント養成講座</h1>
+            <p class="text-xl md:text-2xl font-semibold text-gray-800 mt-2">《総合オンラインプログラム》</p>
+        </header>
+
+        <!-- 価格・申し込みセクション -->
+        <section class="max-w-2xl mx-auto bg-gray-50 rounded-xl shadow-lg p-8 mb-16 border border-gray-200">
+            <div class="text-center mb-8">
+                <p class="text-lg text-gray-600">販売価格</p>
+                <p class="text-5xl font-bold text-gray-900 my-2">298,000<span class="text-2xl ml-1">円</span><span class="text-xl ml-2">(税込)</span></p>
             </div>
-          </div>
-          <div class="section-body card-wrapper my-gallery">
-            <div class="card">
-              <a href="img/works/gackt.png" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/gackt.png" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">インスタチックなアプリ</div>
-                <div class="card-caption-info">Design / Coding(Responsive)</div>
-                <div class="card-caption-url"><a class="url-link" href="https://secret-cove-29483.herokuapp.com/"
-                    target="_blank">Link</a>
+            <div class="space-y-4">
+                <a href="#" class="block w-full text-center p-4 rounded-lg font-bold text-lg accent-blue hover:bg-blue-700 transition-colors duration-300 shadow-md">
+                    クレジットカード一括 お支払いはこちら
+                </a>
+                <a href="#" class="block w-full text-center p-4 rounded-lg font-bold text-lg accent-blue-outline bg-white hover:bg-gray-100 transition-colors duration-300 border-2">
+                    銀行振り込み一括 お支払いはこちら
+                </a>
+                <a href="#" class="block w-full text-center p-4 rounded-lg font-bold text-lg accent-blue-outline bg-white hover:bg-gray-100 transition-colors duration-300 border-2">
+                    クレジットカード 24分割 お支払いはこちら
+                </a>
+            </div>
+        </section>
+
+        <!-- 商品概要セクション -->
+        <section class="mb-16 md:mb-24">
+            <h2 class="section-title">プログラム概要</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-blue-700">AIの基礎講座（プレ講座）</h3>
+                    <p class="text-gray-600">ChatGPTや画像生成AIの基本を理解することで、スムーズに本講座に進めます。</p>
                 </div>
-              </div>
-            </div>
-            <div class="card">
-              <a href="img/works/sazae.png" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/sazae.png" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">ジャンケンゲーム</div>
-                <div class="card-caption-info">Coding(Responsive)</div>
-                <div class="card-caption-url"><a class="url-link" href="https://kyotot.github.io/janken.github.io-/"
-                    target="_blank">Link</a>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-blue-700">常に進化する最新AIの情報をキャッチアップ</h3>
+                    <p class="text-gray-600">◎ 情報シャワー型テキストコンテンツ（毎週更新）<br>◎ 実践レビュー：最新AIツールの検証・使い方解説</p>
                 </div>
-              </div>
-            </div>
-            <div class="card">
-              <a href="img/works/photoshop1.png" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/photoshop1.png" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">タグの紐の消去</div>
-                <div class="card-caption-info">Design</div>
-                <div class="card-caption-url"><a class="url-link" href="https://xfs.jp/nnRFS9" target="_blank">Link</a>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-blue-700">60時間分の生成AI解説ビデオ集</h3>
+                    <p class="text-gray-600">ChatGPT / Gemini / Claude / Midjourney etc… 各AIの特徴とビジネス活用事例を体系的に解説。永久アーカイブで何度でも見返せます。</p>
                 </div>
-              </div>
-            </div>
-            <div class="card">
-              <a href="img/works/Coming Soon.png" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/Coming Soon.png" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">xxx</div>
-                <div class="card-caption-info">xxx</div>
-              </div>
-            </div>
-            <div class="card">
-              <a href="img/works/Coming Soon.png" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/Coming Soon.png" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">xxx</div>
-                <div class="card-caption-info">xxx</div>
-              </div>
-            </div>
-            <div class="card">
-              <a href="img/works/Coming Soon.png" data-size="960x720" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/Coming Soon.png" alt="" />
-              </a>
-              <div class="card-caption">
-                <div class="card-caption-title">xxx</div>
-                <div class="card-caption-info">xxx</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="section" id="feature">
-        <div class="inner">
-          <div class="section-title-area">
-            <h2 class="section-title">FEATURE</h2>
-            <div class="section-intro">
-              ピックアップしたサイトの解説
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="section-image">
-              <a href="https://webdesigner-go.com/" class="hover-action-01" target="_blank"><img
-                  src="img/feature/feature.jpg" alt=""></a>
-            </div>
-            <div class="section-desc">
-              <div class="section-text">
-                <span class="text-bold">サイト名：</span><br>インスタチックなアプリ<br><a href="#"
-                  target="_blank">https://●●●.com</a><br><br>
-                <span class="text-bold">担当：</span><br>Design / Coding (Responsive)<br>
-                <br>
-                <span class="text-bold">コメント：</span><br>こんにちは<br><br>こんにちは<br><br>
-                こんにちは<br><br>こんにちは
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <section class="section" id="about">
-        <div class="inner">
-          <div class="section-title-area">
-            <h2 class="section-title">ABOUT</h2>
-            <div class="section-intro">
-              こんにちは、kakuです！
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="section-image">
-              <img class="lazyload fadein" data-src="img/about/aiba.jpg" alt="">
-            </div>
-            <div class="section-desc">
-              <div class="section-text">
-                　平成30年7月から元々人前で表現することが好きなこともあり、役者として食べていこうと思い、アルバイトで働きながら、ひたすら稽古して舞台に出たり、映像を撮ったりする日々を送っていました。<br><br>　しかし、現実は甘くありませんでした。役者だけでは十分なお金が稼げず、次第にアルバイトの出勤が多くなり、稽古に割ける時間も取れなくなり、ほぼフリーター同然の生活になっていました。<br>　学歴もなく、手に職もなく、やりがいを感じられないアルバイトを毎日淡々とこなしているだけの自分に対して、「このままじゃダメだ」と思うと同時に、「なにかクリエイティブでやりがいのある仕事がしたい。」と思い、絵が元々好きなこともあり、Webデザイナーという仕事に魅力感じました。
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="skill">
-        <div class="inner">
-          <div class="section-title-area">
-            <h2 class="section-title">SKILL</h2>
-            <div class="section-intro">
-              未経験ですが頑張ります！
-            </div>
-          </div>
-          <div class="section-body card-wrapper">
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/HTML5&CSS3.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">HTML5/CSS3</h3>
-                <div class="rating">
-                  <div class="rate rate3"></div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-blue-700">AI × 業務効率化パート</h3>
+                    <p class="text-gray-600">ChatGPTでの業務自動化、Zapier連携など、テンプレートや実践フロー付き。「業務効率化事例集」も収録し、200コンテンツ以上提供。</p>
                 </div>
-                <div class="section-text">
-                  基本的なコーディングは問題ありません。使用エディタはVisualStudioCodeです。</div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/JavaScript.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">JavaScript</h3>
-                <div class="rating">
-                  <div class="rate rate1"></div>
+                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-blue-700">会員専用コミュニティ</h3>
+                    <p class="text-gray-600">会員専用サイト（オンクラス）とDiscordグループコミュニティへご招待します。</p>
                 </div>
-                <div class="section-text">
-                  目下勉強中です。</div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/WordPress.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">WordPress</h3>
-                <div class="rating">
-                  <div class="rate rate1"></div>
+                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-xl transition-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-blue-700">徹底サポート</h3>
+                    <p class="text-gray-600">チャットワークグループでの手厚いチャットサポートを提供します。</p>
                 </div>
-                <div class="section-text">
-                  目下勉強中です。</div>
-              </div>
             </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/Photoshop.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">Photoshop</h3>
-                <div class="rating">
-                  <div class="rate rate2"></div>
+        </section>
+
+        <!-- 特典セクション -->
+        <section class="mb-16 md:mb-24 bg-gray-900 text-white py-16 rounded-xl">
+             <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8 text-white relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-500 after:rounded">豪華特典</h2>
+                <ul class="space-y-4 text-lg text-center">
+                    <li><span class="text-blue-400 mr-2">✔</span>AI切り抜きショート動画販売権利</li>
+                    <li><span class="text-blue-400 mr-2">✔</span>社長AIプロダクト販売権利</li>
+                    <li><span class="text-blue-400 mr-2">✔</span>今後開発されるAIプログラム・ツールの販売代理店権利</li>
+                </ul>
+                <p class="text-center text-gray-400 mt-4 text-sm">※一部選定あり</p>
+            </div>
+        </section>
+
+        <!-- 各種規約セクション -->
+        <section class="max-w-4xl mx-auto">
+            <div x-data="{ open: 'tokutei' }" class="space-y-6">
+                <div class="border-b-2 border-gray-200">
+                    <button @click="open = 'tokutei'" :class="{'text-blue-600 border-blue-600': open === 'tokutei'}" class="text-xl font-bold pb-2 border-b-4 transition-colors">特定商取引法に基づく表記</button>
+                    <button @click="open = 'privacy'" :class="{'text-blue-600 border-blue-600': open === 'privacy'}" class="text-xl font-bold pb-2 ml-6 border-b-4 border-transparent transition-colors">プライバシーポリシー</button>
                 </div>
-                <div class="section-text">
-                  目下勉強中です。</div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/Illustrator.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">Illustrator</h3>
-                <div class="rating">
-                  <div class="rate rate1"></div>
+
+                <!-- 特定商取引法に基づく表記 -->
+                <div x-show="open === 'tokutei'" x-transition class="bg-gray-50 p-8 rounded-lg border">
+                    <dl class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
+                        <div class="md:col-span-1 font-semibold text-gray-600">販売業者</div>
+                        <div class="md:col-span-2">株式会社スカイ</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">運営責任者</div>
+                        <div class="md:col-span-2">山本智也</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">所在地</div>
+                        <div class="md:col-span-2">〒150-0031 東京都渋谷区桜丘町1番2号渋谷サクラステージセントラルビル9階</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">Ｅメールアドレス</div>
+                        <div class="md:col-span-2">all@skyskysky.jp</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">電話番号</div>
+                        <div class="md:col-span-2">03-4346-2161</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">受講費</div>
+                        <div class="md:col-span-2">定価: 298,000円 / 一括価格: 298,000円 / 24分割: 298,000円(税込)×24回</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">サービスの引き渡し時期</div>
+                        <div class="md:col-span-2">決済完了後、2営業日以内にメールにてご案内いたします。</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">お申し込み方法</div>
+                        <div class="md:col-span-2">販売ページ内の申込フォームよりお申し込みください。</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">商品代金以外の必要料金</div>
+                        <div class="md:col-span-2">クレジットカード分割払いを選択された場合、別途分割手数料。</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">支払方法</div>
+                        <div class="md:col-span-2">クレジットカード決済、銀行振込</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">支払期日</div>
+                        <div class="md:col-span-2">クレジットカード決済の場合: ご注文時<br>銀行振込の場合: ご注文から48時間以内</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">返品について</div>
+                        <div class="md:col-span-2">動作不良を除き、申込後お客様都合による返品は受け付けておりません。</div>
+                        <div class="md:col-span-1 font-semibold text-gray-600">表現、及び商品に関する注意書き</div>
+                        <div class="md:col-span-2">本商品に示された表現や再現性には個人差があり、必ずしも利益や効果を保証したものではございません。</div>
+                    </dl>
                 </div>
-                <div class="section-text">
-                  目下勉強中です。
+
+                <!-- プライバシーポリシー -->
+                <div x-show="open === 'privacy'" x-transition class="bg-gray-50 p-8 rounded-lg border space-y-6 text-gray-700 leading-relaxed">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">はじめに</h4>
+                        <p>株式会社スカイ（以下「当法人」といいます）は、個人情報の保護を社会的責務であると考え、 お客様に安心してご利用いただけるウェブサイトの管理・運営を行うため、「個人情報保護方針」に基づき、 以下のとおり「ウェブサイトにおける個人情報の取扱いについて」を定めました。</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">個人情報の利用目的</h4>
+                        <p>当法人は、お客様から収集させていただいた個人情報、ご注文情報を、本サービスを提供する目的の他に、以下の各号に定める目的のために利用することがあります。</p>
+                        <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+                            <li>お客様に対して、当法人の商品やサービスをご紹介する場合</li>
+                            <li>当法人において、お客様に代行してご注文手続き、ご注文内容の確認、変更手続きを行う場合</li>
+                            <li>お客様からのお問い合わせに対して回答を行う場合</li>
+                            <li>お客様に対して、当法人のサービスに対するご意見やご感想のご提供をお願いするため</li>
+                            <li>お客様の属性ごとに分類された統計的資料を作成するため</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h4 class="font-bold text-lg mb-2">個人情報の安全管理について</h4>
+                        <p>当法人は個人情報の正確性及び安全性を確保する為、個人情報へのアクセス管理、持ち出し手段の制限、不正アクセスおよび、漏洩、紛失、破壊、改ざんなどに対しては、合理的な安全対策を講じるとともに、万一、漏洩等個人情報に関する事故が発生した場合には、再発防止策を含む適切な対策を速やかに講じます。</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">個人情報の第三者への開示</h4>
+                        <p>当法人は、個人情報を本人の許可無く他の事業者や個人などの第三者に提供および公開することはありません。ただし、官公庁等の公的機関から法令に基づき開示を求められた場合などはその限りではありません。</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="card">
-              <div class="skill-icon">
-                <img src="img/skill/Ruby on Rails.png" alt="">
-              </div>
-              <div class="skill-desc">
-                <h3 class="skill-desc-title">Ruby on Rails</h3>
-                <div class="rating">
-                  <div class="rate rate3"></div>
-                </div>
-                <div class="section-text">
-                  MVCやDeviceといったgemsを元に、WEBサイト制作やSNSやマッチングサービスなどのWebサービスなど開発できます。
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="section" id="contact">
-        <div class="inner">
-          <div class="section-title-area">
-            <h2 class="section-title">CONTACT</h2>
-            <div class="section-intro">
-              お問い合わせは、SNSかメールでお願いいたします。
-            </div>
-          </div>
-          <div class="section-body contact-wrapper">
-            <div class="contact-list">
-              <ul>
-                <li><a href="https://twitter.com/HIStory2Bad" target="_blank"><img src="img/contact/icon_tw.png"
-                      alt=""></a>
-                </li>
-                <li><a href="https://www.facebook.com/profile.php?id=100010547625259" target="_blank"><img
-                      src="img/contact/icon_fb.png" alt=""></a>
-                </li>
-              </ul>
-              <div class="contact-other">history31498@gmail.com</div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer id="footer">
-      <div class="pageTop">
-        <div id="js-pageTop">
-          Page Top
-        </div>
-      </div>
-      <div class="inner">
-        <div class="copyright">Copyright&copy;kaku. All Rights Reserved.</>
-        </div>
-    </footer>
-  </div>
-
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
-
+        </section>
     </div>
 
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
-  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
-  <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
-</body>
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-16">
+        <p>Copyright© 2025 株式会社スカイ all right reserved.</p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</body>
 </html>
